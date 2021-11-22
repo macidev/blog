@@ -28,7 +28,7 @@ deploy:
     # Sync the built site
     # IMPORTANT: Make sure to modify the rsync command below
     # for your sever. Remove --dry-run when ready to deploy
-    - rsync -crtvz --dry-run --delete ./public/ p582623@$RSYNC_KNOWN_HOSTS:/home/www/p582623/html/buzigde/
+    - rsync -crtvz --delete ./public/ p582623@$RSYNC_KNOWN_HOSTS:/home/www/p582623/html/buzigde/
   only: # Only run on main branch
     variables:
       - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
