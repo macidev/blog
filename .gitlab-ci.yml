@@ -1,13 +1,34 @@
-image: monachus/hugo
+# Use GitLabs built-in Hugo image
+# Might be wise to change from latest to a specific version of Hugo
+# to ensure nothing breaks when new versions of Hugo are released.
+#
+# For example:
+# image: registry.gitlab.com/pages/hugo:0.81.0  
+image: registry.gitlab.com/pages/hugo:latest
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-pages:
+deploy:
+  # Set sane timeout, for me it takes ~25 seconds to run so
+  # 5 minutes is reasonable
+  timeout: 5 minutes
   script:
+    # Need SSH client for rsync to use
+    - apk add rsync openssh-client
+    # Add the key and known hosts
+    - mkdir -p ~/.ssh
+    - ssh-keyscan $RSYNC_KNOWN_HOSTS >> ~/.ssh/known_hosts
+    - echo "$RSYNC_PRIVATE_KEY" > ~/.ssh/key
+    - chmod -R 700 ~/.ssh
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/key
+    # Build the website
     - hugo
-  artifacts:
-    paths:
-      - public
-  only:
-    - master
+    # Sync the built site
+    # IMPORTANT: Make sure to modify the rsync command below
+    # for your sever. Remove --dry-run when ready to deploy
+    - rsync -crtvz --dry-run --delete ./public/ p582623@$RSYNC_KNOWN_HOSTS:/home/www/p582623/html/buzigde/
+  only: # Only run on main branch
+    variables:
+      - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
