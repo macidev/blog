@@ -21,8 +21,7 @@ Mach bitte eine Datensicherung und stecke diese auch nach erfolgreicher Sicherun
 **wirklich, mach eine Datensicherung!**
 
 Die Datensicherung der Einstellungen ist in meiner DSM 5.2.X dediziert separat durchzuführen. 
-
-// 2do: Erklären der Sicherung der Einstellungen
+Es kann allerdings durchaus sein, dass die Datensicherung der Einstellungen zusammen mit der Sicherung der Daten einhergeht. 
 
 ## Durchgeführte Arbeiten
 
@@ -34,14 +33,17 @@ Sobald das getan ist, gilt nachfolgende Liste:
 
 - Ausbau der alten Festplatte
 - Einbau der neuen Festplatte
-- Download der Synology Software für den Computer 
-- Download der DSM-Version vom Server
+- Download der [Synology Assistent Software](https://www.synology.com/de-de/support/download/DS110j?version=5.2#utilities) für den Computer 
+- Download der [DSM-Version](https://www.synology.com/de-de/support/download) vom Server
 - Einstecken von Netzwerk und Strom
 - Starten das NAS
-- Konfiguration des NAS und Einspielen der Software
+- Konfiguration des NAS und Einspielen der Software (Ein Teil wird durch das spätere Einspielen der Einstellungsdatensicherung übernommen)
 - Updates durchführen
-- Sicherung einspielen (Konfig und Daten)
-- Datensicherung einrichten
+- Datensicherung einspielen (Konfiguration und Daten)
+- Datensicherung einrichten für die Zukunft
 
+So, dann sind wir fertig und du kannst deine Synology wieder benutzen. :D 
 
+Ernsthaft, im Grunde ist das wirklich so einfach. 
 
+Vielleicht gibt es Rückfragen, lass mir dann doch einfach einen Kommentar da, ich antworte gerne. 
