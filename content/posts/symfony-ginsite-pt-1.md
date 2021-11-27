@@ -7,8 +7,8 @@ cover = ""
 tags = ["php", "symfony", "development"]
 keywords = ["php", "symfony", "development"]
 description = "Seit einigen Wochen bin ich dabei mich mehr mit dem Thema Symfony tiefer zu beschäftigen. Was passt hier mehr, als Gin-Liebhaber eine Website zu programmieren, mit welcher Gin und Tonic entsprechend matchen kann? Im Ersten Teil schreibe ich, wie ich hier gestartet bin und direkt zweimal neu angefangen habe."
-showFullContent = true
-readingTime = false
+showFullContent = false
+readingTime = true
 +++
 
 Seit einigen Wochen bin ich dabei mich mehr mit dem Thema Symfony tiefer zu beschäftigen. Was passt hier mehr, als Gin-Liebhaber eine Website zu programmieren, mit welcher Gin und Tonic entsprechend matchen kann? Im Ersten Teil schreibe ich, wie ich hier gestartet bin und direkt zweimal neu angefangen habe.
