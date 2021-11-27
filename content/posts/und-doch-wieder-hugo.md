@@ -2,6 +2,10 @@
 title: "Und Doch Wieder Hugo"
 date: 2021-01-28T15:26:10+01:00
 draft: false
+author: "Marcus"
+authorTwitter: "buzigde"
+tags: ["hugo", "kein-wordpress"]
+keywords: ["hugo", "wordpress", "gohugo.io"]
 ---
 
 ## Wieder Hugo
