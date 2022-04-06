@@ -4,7 +4,7 @@ title = "Buzig.de"
 theme = "terminal"
 
 [params]
-talkyardServerUrl = "https://comments-for-buzig-de.talkyard.net"
+talkyardServerUrl = "https://site-132tytfcba.talkyard.net"
 talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
 
 # dir name of your main content (default is `content/posts`).
