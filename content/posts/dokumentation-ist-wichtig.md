@@ -1,7 +1,7 @@
 +++
 title = "Dokumentation ist wichtig"
 date = "2022-04-06T21:48:28+02:00"
-author = "Marcus C"
+author = "Marcus"
 authorTwitter = "buzigde" #do not include @
 cover = ""
 tags = ["entwicklung", "dokumentation"]
