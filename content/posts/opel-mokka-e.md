@@ -1,5 +1,6 @@
 +++
 title = "Opel Mokka E"
+discussionId = "2023-01-05-opel-mokka-e"
 date = "2023-01-05T10:57:21+02:00"
 author = "Marcus"
 authorTwitter = "buzigde" #do not include @
