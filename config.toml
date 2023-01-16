@@ -3,10 +3,6 @@ languageCode = "de-DE"
 title = "Buzig.de"
 theme = "terminal"
 
-[params]
-talkyardServerUrl = "https://site-132tytfcba.talkyard.net"
-talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
-
 # dir name of your main content (default is `content/posts`).
 # the list of set content will show up on your index page (baseurl).
 contentTypeName = "posts"
