@@ -11,7 +11,7 @@ description = ""
 showFullContent = false
 readingTime = true
 hideComments = false
-color = "" #color from the theme settings
+color = "blue" #color from the theme settings
 +++
 # Synology EOL und E-Mail von Synology
 Vor einiger Zeit hatte ich auf diesem Blog einige Artikel zum Thema Synology, Backups und Co geschrieben. 
