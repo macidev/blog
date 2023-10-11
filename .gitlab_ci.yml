@@ -3,11 +3,12 @@ variables:
 
 deploy:
   stage: deploy
-  only:
-    - master
+#  only:
+#    - master
+
   image: eclipsefdn/hugo-node:latest
   script: 
     - apt-get update && sudo apt-get install lftp
     - echo "-.-.-.-.-.-.-.-.-.-.-.-."
     - hugo
-    - lftp -e "mirror -R  sft://my_webapp__2:$SSH_PASS@my-srvr.de:22000; mirror --parallel=10 "
+#    - lftp -e "mirror -R  sft://my_webapp__2:$SSH_PASS@my-srvr.de:22000; mirror --parallel=10 "
