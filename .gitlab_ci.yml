@@ -10,5 +10,6 @@ deploy:
   script: 
     - apt-get update && sudo apt-get install lftp
     - echo "-.-.-.-.-.-.-.-.-.-.-.-."
+    - echo "PWD"
     - hugo
 #    - lftp -e "mirror -R  sft://my_webapp__2:$SSH_PASS@my-srvr.de:22000; mirror --parallel=10 "
