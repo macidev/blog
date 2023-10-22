@@ -3,13 +3,17 @@ deploy:
   only:
     - master
 
-  image: klakegg/hugo:ext-alpine-ci
-  script: 
-    - apk add lftp
-    - apk add git
+  image: klakegg/hugo:ext-debian-ci
+  script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_KEY" | tr -d '\r' | ssh-add -
+    - mkdir ~/.ssh
+    - ssh-keyscan 193.53.251.11 >> ~/.ssh/known_hosts
+    - apt-get update && apt-get install git rsync
     - echo "-.-.-.-.-.-.-.-.-.-.-.-."
     - git submodule init
     - git submodule update --remote --merge
     - echo "-.-.-.-.-.-.-.-.-.-.-.-."
+    - echo "$PWD"
     - hugo
-    - lftp -e "set sftp:auto-confirm yes; mirror -c -R -X .* --verbose ./public sftp://my_webapp__2:$Deploy_PW@my-srvr.de:22000/www;"
+    - rsync -avz -e "ssh -o StrictHostKeyChecking=no" --exclude-from=rsync-excl.txt /builds/buzigde/buzigde/public/ $SSH_USER@193.53.251.11:/home/www/p582623/html/buzigde/
