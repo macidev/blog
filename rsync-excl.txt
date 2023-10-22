@@ -1,0 +1,11 @@
+.git
+.env.local
+.env
+.env.test
+.gitlab-ci.yml
+Dockerfile
+docker-compose.yml
+README.md
+rsync-excl.txt
+var/cache
+node_modules
