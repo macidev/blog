@@ -4,14 +4,14 @@ title = "Buzig.de"
 theme = "terminal"
 
 [params]
-    contentTypeName = "posts"
-    themeColor = "blue"
-    showMenuItems = 3
-    fullWidthTheme = false
-    centerTheme = true
-    # show selector to switch language
-    showLanguageSelector = false
-    showLastUpdated = true
+contentTypeName = "posts"
+themeColor = "blue"
+showMenuItems = 3
+fullWidthTheme = false
+centerTheme = true
+# show selector to switch language
+showLanguageSelector = false
+showLastUpdated = true
 
 [params.twitter]
 # set Twitter handles for Twitter cards
@@ -21,34 +21,33 @@ creator = ""
 site = ""
 
 [languages]
-    [languages.en]
-    languageName = "Deutsch"
-    title = "buzig.de"
-    subtitle = "Ein Blog zu und über Technik, E-Commerce und Programmierung"
-    owner = "Marcus Cimander"
-    keywords = "shopware,blog,e-commerce,technik,programmierung"
-    copyright = "Marcus Cimander"
-    menuMore = "mehr ..."
-    readMore = "weiterlesen"
-    readOtherPosts = "Lies die anderen Beiträge"
-    missingContentMessage = "Seite nicht gefunden"
-    missingBackButtonLabel = "zurück zur Startseite"
+[languages.en]
+languageName = "Deutsch"
+title = "buzig.de"
+subtitle = "Ein Blog zu und über Technik, E-Commerce und Programmierung"
+owner = "Marcus Cimander"
+keywords = "shopware,blog,e-commerce,technik,programmierung"
+copyright = "Marcus Cimander"
+menuMore = "mehr ..."
+readMore = "weiterlesen"
+readOtherPosts = "Lies die anderen Beiträge"
+missingContentMessage = "Seite nicht gefunden"
+missingBackButtonLabel = "zurück zur Startseite"
 
-    [languages.en.params.logo]
-    logoText = "Buzig.de"
-    logoHomeLink = "/"
+[languages.en.params.logo]
+logoText = "Buzig.de"
+logoHomeLink = "/"
 
-    [languages.en.menu]
-    [[languages.en.menu.main]]
-        identifier = "Impressum"
-        name = "Impressum"
-        url = "/page/impressum"
-    [[languages.en.menu.main]]
-        identifier = "Kontakt"
-        name = "Kontakt"
-        url = "/page/kontakt"
-    [[languages.en.menu.main]]
-        identifier = "Datenschutz"
-        name = "Datenschutz"
-        url = "/page/datenschutz"
-
+[languages.en.menu]
+[[languages.en.menu.main]]
+identifier = "Impressum"
+name = "Impressum"
+url = "/page/impressum"
+[[languages.en.menu.main]]
+identifier = "Kontakt"
+name = "Kontakt"
+url = "/page/kontakt"
+[[languages.en.menu.main]]
+identifier = "Datenschutz"
+name = "Datenschutz"
+url = "/page/datenschutz"
